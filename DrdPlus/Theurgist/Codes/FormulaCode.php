@@ -1,12 +1,10 @@
 <?php
 namespace DrdPlus\Theurgist\Codes;
 
-use DrdPlus\Codes\Partials\AbstractCode;
-
 /**
  * @method static FormulaCode getIt($codeValue)
  */
-class FormulaCode extends AbstractCode
+class FormulaCode extends AbstractTheurgistCode
 {
     const BARRIER = 'barrier';
     const SMOKE = 'smoke';
@@ -40,4 +38,32 @@ class FormulaCode extends AbstractCode
             self::LOCK,
         ];
     }
+
+    /**
+     * @param string $languageCode
+     * @return array|string[]
+     */
+    protected function getTranslations(string $languageCode): array
+    {
+        return self::$translations[$languageCode] ?? [];
+    }
+
+    private static $translations = [
+        'cs' => [
+            self::BARRIER => 'bariéra',
+            self::SMOKE => 'dým',
+            self::ILLUSION => 'iluze',
+            self::METAMORPHOSIS => 'metamorfóza',
+            self::FIRE => 'oheň',
+            self::PORTAL => 'portál',
+            self::LIGHT => 'světlo',
+            self::FLOW_OF_TIME => 'tok času',
+            self::TSUNAMI_FROM_CLAY_AND_STONES => 'tsunami z hlíny a kamení',
+            self::HIT => 'úder',
+            self::GREAT_MASSACRE => 'velký mord',
+            self::DISCHARGE => 'výboj',
+            self::LOCK => 'zamčení',
+        ],
+    ];
+
 }

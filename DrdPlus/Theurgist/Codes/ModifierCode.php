@@ -1,12 +1,10 @@
 <?php
 namespace DrdPlus\Theurgist\Codes;
 
-use DrdPlus\Codes\Partials\AbstractCode;
-
 /**
  * @method static ModifierCode getIt($codeValue)
  */
-class ModifierCode extends AbstractCode
+class ModifierCode extends AbstractTheurgistCode
 {
     const COLOR = 'color';
     const GATE = 'gate';
@@ -51,5 +49,36 @@ class ModifierCode extends AbstractCode
             self::SCENT,
         ];
     }
+
+    /**
+     * @param string $languageCode
+     * @return array|string[]
+     */
+    protected function getTranslations(string $languageCode): array
+    {
+        return self::$translations[$languageCode] ?? [];
+    }
+
+    private static $translations = [
+        'cs' => [
+            self::COLOR => 'barva',
+            self::GATE => 'brána',
+            self::EXPLOSION => 'exploze',
+            self::FILTER => 'filtr',
+            self::WATCHER => 'hlídač',
+            self::THUNDER => 'hrom',
+            self::INTERACTIVE_ILLUSION => 'interaktivní iluze',
+            self::HAMMER => 'kladivo',
+            self::CAMOUFLAGE => 'maskování',
+            self::INVISIBILITY => 'neviditelnost',
+            self::MOVEMENT => 'pohyb',
+            self::PUNCTURATION => 'průraz',
+            self::RECEPTOR => 'receptor',
+            self::STEP_TO_FUTURE_OR_PAST => 'schod do budoucnosti nebo minulosti',
+            self::TRANSPOSITION => 'transpozice',
+            self::RELEASE => 'uvolnění',
+            self::SCENT => 'vůně',
+        ],
+    ];
 
 }
