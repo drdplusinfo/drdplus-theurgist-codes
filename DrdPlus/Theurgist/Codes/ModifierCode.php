@@ -17,7 +17,7 @@ class ModifierCode extends AbstractTheurgistCode
     const CAMOUFLAGE = 'camouflage';
     const INVISIBILITY = 'invisibility';
     const MOVEMENT = 'MOVEMENT';
-    const PUNCTURATION = 'puncturation';
+    const BREACH = 'breach';
     const RECEPTOR = 'receptor';
     const STEP_TO_FUTURE_OR_PAST = 'step_to_future_or_past';
     const TRANSPOSITION = 'transposition';
@@ -41,7 +41,7 @@ class ModifierCode extends AbstractTheurgistCode
             self::CAMOUFLAGE,
             self::INVISIBILITY,
             self::MOVEMENT,
-            self::PUNCTURATION,
+            self::BREACH,
             self::RECEPTOR,
             self::STEP_TO_FUTURE_OR_PAST,
             self::TRANSPOSITION,
@@ -72,7 +72,7 @@ class ModifierCode extends AbstractTheurgistCode
             self::CAMOUFLAGE => 'maskování',
             self::INVISIBILITY => 'neviditelnost',
             self::MOVEMENT => 'pohyb',
-            self::PUNCTURATION => 'průraz',
+            self::BREACH => 'průraz',
             self::RECEPTOR => 'receptor',
             self::STEP_TO_FUTURE_OR_PAST => 'schod do budoucnosti nebo minulosti',
             self::TRANSPOSITION => 'transpozice',
