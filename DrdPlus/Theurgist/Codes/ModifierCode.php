@@ -16,7 +16,7 @@ class ModifierCode extends AbstractTheurgistCode
     const HAMMER = 'hammer';
     const CAMOUFLAGE = 'camouflage';
     const INVISIBILITY = 'invisibility';
-    const MOVEMENT = 'MOVEMENT';
+    const MOVEMENT = 'movement';
     const BREACH = 'breach';
     const RECEPTOR = 'receptor';
     const STEP_TO_FUTURE_OR_PAST = 'step_to_future_or_past';

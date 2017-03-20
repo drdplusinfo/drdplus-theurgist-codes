@@ -18,7 +18,7 @@ class FormulaCode extends AbstractTheurgistCode
     const HIT = 'hit';
     const GREAT_MASSACRE = 'great_massacre';
     const DISCHARGE = 'discharge';
-    const LOCK = 'LOCK';
+    const LOCK = 'lock';
 
     public static function getPossibleValues()
     {
