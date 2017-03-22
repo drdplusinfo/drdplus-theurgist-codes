@@ -12,7 +12,6 @@ class ProfileCode extends AbstractTheurgistCode
     const SCENT = 'Scent';
     const ILLUSION = 'Illusion';
     const RECEPTOR = 'Receptor';
-    const LOCK = 'Lock';
     const BREACH = 'Breach';
     const FIRE = 'Fire';
     const GATE = 'Gate';
@@ -33,7 +32,6 @@ class ProfileCode extends AbstractTheurgistCode
             self::SCENT,
             self::ILLUSION,
             self::RECEPTOR,
-            self::LOCK,
             self::BREACH,
             self::FIRE,
             self::GATE,
@@ -61,7 +59,6 @@ class ProfileCode extends AbstractTheurgistCode
             self::SCENT => 'Pach',
             self::ILLUSION => 'Iluze',
             self::RECEPTOR => 'Receptor',
-            self::LOCK => 'Zamčení',
             self::BREACH => 'Průraz',
             self::FIRE => 'Oheň',
             self::GATE => 'Brána',
