@@ -57,7 +57,7 @@ abstract class AbstractTheurgistCodeTest extends AbstractCodeTest
     /**
      * @test
      */
-    public function I_get_original_value_and_warning_for_unknown_locale()
+    public function I_can_get_original_value()
     {
         /** @var AbstractTheurgistCode $sutClass */
         $sutClass = self::getSutClass();
@@ -66,6 +66,20 @@ abstract class AbstractTheurgistCodeTest extends AbstractCodeTest
             $sut = $sutClass::getIt($value);
             $inEnglish = str_replace('_', ' ', $value);
             self::assertSame($inEnglish, $sut->translateTo('en'));
+        }
+    }
+
+    /**
+     * @test
+     */
+    public function I_get_warning_for_unknown_locale()
+    {
+        /** @var AbstractTheurgistCode $sutClass */
+        $sutClass = self::getSutClass();
+        foreach ($sutClass::getPossibleValues() as $value) {
+            /** @var AbstractTheurgistCode $sut */
+            $sut = $sutClass::getIt($value);
+            $inEnglish = str_replace('_', ' ', $value);
             $previousErrorReporting = error_reporting(-1 ^ E_USER_WARNING);
             error_clear_last();
             self::assertSame($inEnglish, @$sut->translateTo('demonic'));
