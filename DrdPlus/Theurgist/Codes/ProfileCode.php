@@ -7,7 +7,7 @@ namespace DrdPlus\Theurgist\Codes;
 class ProfileCode extends AbstractTheurgistCode
 {
     const BARRIER = 'Barrier';
-    const MODIFIER = 'Modifier';
+    const SPARK = 'Spark';
     const RELEASE = 'Release';
     const SCENT = 'Scent';
     const ILLUSION = 'Illusion';
@@ -27,7 +27,7 @@ class ProfileCode extends AbstractTheurgistCode
     {
         return [
             self::BARRIER,
-            self::MODIFIER,
+            self::SPARK,
             self::RELEASE,
             self::SCENT,
             self::ILLUSION,
@@ -53,18 +53,18 @@ class ProfileCode extends AbstractTheurgistCode
 
     private static $translations = [
         'cs' => [
-            self::BARRIER => 'Bar',
-            self::MODIFIER => 'Mod',
-            self::RELEASE => 'Uv',
+            self::BARRIER => 'Bariéra',
+            self::SPARK => 'Jiskra',
+            self::RELEASE => 'Uvolnění',
             self::SCENT => 'Pach',
             self::ILLUSION => 'Iluze',
-            self::RECEPTOR => 'Rec',
-            self::LOCK => 'Zam',
-            self::BREACH => 'Pr',
+            self::RECEPTOR => 'Receptor',
+            self::LOCK => 'Zamčení',
+            self::BREACH => 'Průraz',
             self::FIRE => 'Oheň',
             self::GATE => 'Brána',
-            self::MOVEMENT => 'Po',
-            self::TRANSPOSITION => 'Tr',
+            self::MOVEMENT => 'Pohyb',
+            self::TRANSPOSITION => 'Transpozice',
             self::DISCHARGE => 'Výboj',
         ],
     ];
