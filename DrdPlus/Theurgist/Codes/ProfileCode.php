@@ -19,6 +19,7 @@ class ProfileCode extends AbstractTheurgistCode
     const MOVEMENT = 'Movement';
     const TRANSPOSITION = 'Transposition';
     const DISCHARGE = 'Discharge';
+    const WATCHER = 'Watcher';
 
     /**
      * @return array|string[]
@@ -39,6 +40,7 @@ class ProfileCode extends AbstractTheurgistCode
             self::MOVEMENT,
             self::TRANSPOSITION,
             self::DISCHARGE,
+            self::WATCHER,
         ];
     }
 
@@ -66,6 +68,7 @@ class ProfileCode extends AbstractTheurgistCode
             self::MOVEMENT => 'Pohyb',
             self::TRANSPOSITION => 'Transpozice',
             self::DISCHARGE => 'Výboj',
+            self::WATCHER => 'Hlídač',
         ],
     ];
 
