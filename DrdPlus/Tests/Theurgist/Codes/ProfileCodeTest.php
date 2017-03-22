@@ -28,7 +28,7 @@ class ProfileCodeTest extends AbstractTheurgistCodeTest
         self::assertSame(array_values($constants), $values);
         foreach ($values as $value) {
             $valueWithNamedGender = str_replace(['♀','♂'], ['venus', 'mars'], $value);
-            $constantName = strtoupper(str_replace(' ', '_', $valueWithNamedGender));
+            $constantName = strtoupper($valueWithNamedGender);
             self::assertArrayHasKey($constantName, $constants);
             self::assertSame($constants[$constantName], $value);
         }

@@ -6,32 +6,32 @@ namespace DrdPlus\Theurgist\Codes;
  */
 class ProfileCode extends AbstractTheurgistCode
 {
-    const BARRIER_VENUS = 'Barrier ♀';
-    const BARRIER_MARS = 'Barrier ♂';
-    const SPARK_VENUS = 'Spark ♀';
-    const SPARK_MARS = 'Spark ♂';
-    const RELEASE_VENUS = 'Release ♀';
-    const RELEASE_MARS = 'Release ♂';
-    const SCENT_VENUS = 'Scent ♀';
-    const SCENT_MARS = 'Scent ♂';
-    const ILLUSION_VENUS = 'Illusion ♀';
-    const ILLUSION_MARS = 'Illusion ♂';
-    const RECEPTOR_VENUS = 'Receptor ♀';
-    const RECEPTOR_MARS = 'Receptor ♂';
-    const BREACH_VENUS = 'Breach ♀';
-    const BREACH_MARS = 'Breach ♂';
-    const FIRE_VENUS = 'Fire ♀';
-    const FIRE_MARS = 'Fire ♂';
-    const GATE_VENUS = 'Gate ♀';
-    const GATE_MARS = 'Gate ♂';
-    const MOVEMENT_VENUS = 'Movement ♀';
-    const MOVEMENT_MARS = 'Movement ♂';
-    const TRANSPOSITION_VENUS = 'Transposition ♀';
-    const TRANSPOSITION_MARS = 'Transposition ♂';
-    const DISCHARGE_VENUS = 'Discharge ♀';
-    const DISCHARGE_MARS = 'Discharge ♂';
-    const WATCHER_VENUS = 'Watcher ♀';
-    const WATCHER_MARS = 'Watcher ♂';
+    const BARRIER_VENUS = 'barrier_♀';
+    const BARRIER_MARS = 'barrier_♂';
+    const SPARK_VENUS = 'spark_♀';
+    const SPARK_MARS = 'spark_♂';
+    const RELEASE_VENUS = 'release_♀';
+    const RELEASE_MARS = 'release_♂';
+    const SCENT_VENUS = 'scent_♀';
+    const SCENT_MARS = 'scent_♂';
+    const ILLUSION_VENUS = 'illusion_♀';
+    const ILLUSION_MARS = 'illusion_♂';
+    const RECEPTOR_VENUS = 'receptor_♀';
+    const RECEPTOR_MARS = 'receptor_♂';
+    const BREACH_VENUS = 'breach_♀';
+    const BREACH_MARS = 'breach_♂';
+    const FIRE_VENUS = 'fire_♀';
+    const FIRE_MARS = 'fire_♂';
+    const GATE_VENUS = 'gate_♀';
+    const GATE_MARS = 'gate_♂';
+    const MOVEMENT_VENUS = 'movement_♀';
+    const MOVEMENT_MARS = 'movement_♂';
+    const TRANSPOSITION_VENUS = 'transposition_♀';
+    const TRANSPOSITION_MARS = 'transposition_♂';
+    const DISCHARGE_VENUS = 'discharge_♀';
+    const DISCHARGE_MARS = 'discharge_♂';
+    const WATCHER_VENUS = 'watcher_♀';
+    const WATCHER_MARS = 'watcher_♂';
 
     /**
      * @return array|string[]
@@ -79,32 +79,32 @@ class ProfileCode extends AbstractTheurgistCode
 
     private static $translations = [
         'cs' => [
-            self::BARRIER_VENUS => 'Bariéra ♀',
-            self::BARRIER_MARS => 'Bariéra ♂',
-            self::SPARK_VENUS => 'Jiskra ♀',
-            self::SPARK_MARS => 'Jiskra ♂',
-            self::RELEASE_VENUS => 'Uvolnění ♀',
-            self::RELEASE_MARS => 'Uvolnění ♂',
-            self::SCENT_VENUS => 'Pach ♀',
-            self::SCENT_MARS => 'Pach ♂',
-            self::ILLUSION_VENUS => 'Iluze ♀',
-            self::ILLUSION_MARS => 'Iluze ♂',
-            self::RECEPTOR_VENUS => 'Receptor ♀',
-            self::RECEPTOR_MARS => 'Receptor ♂',
-            self::BREACH_VENUS => 'Průraz ♀',
-            self::BREACH_MARS => 'Průraz ♂',
-            self::FIRE_VENUS => 'Oheň ♀',
-            self::FIRE_MARS => 'Oheň ♂',
-            self::GATE_VENUS => 'Brána ♀',
-            self::GATE_MARS => 'Brána ♂',
-            self::MOVEMENT_VENUS => 'Pohyb ♀',
-            self::MOVEMENT_MARS => 'Pohyb ♂',
-            self::TRANSPOSITION_VENUS => 'Transpozice ♀',
-            self::TRANSPOSITION_MARS => 'Transpozice ♂',
-            self::DISCHARGE_VENUS => 'Výboj ♀',
-            self::DISCHARGE_MARS => 'Výboj ♂',
-            self::WATCHER_VENUS => 'Hlídač ♀',
-            self::WATCHER_MARS => 'Hlídač ♂',
+            self::BARRIER_VENUS => 'bariéra ♀',
+            self::BARRIER_MARS => 'bariéra ♂',
+            self::SPARK_VENUS => 'jiskra ♀',
+            self::SPARK_MARS => 'jiskra ♂',
+            self::RELEASE_VENUS => 'uvolnění ♀',
+            self::RELEASE_MARS => 'uvolnění ♂',
+            self::SCENT_VENUS => 'pach ♀',
+            self::SCENT_MARS => 'pach ♂',
+            self::ILLUSION_VENUS => 'iluze ♀',
+            self::ILLUSION_MARS => 'iluze ♂',
+            self::RECEPTOR_VENUS => 'receptor ♀',
+            self::RECEPTOR_MARS => 'receptor ♂',
+            self::BREACH_VENUS => 'průraz ♀',
+            self::BREACH_MARS => 'průraz ♂',
+            self::FIRE_VENUS => 'oheň ♀',
+            self::FIRE_MARS => 'oheň ♂',
+            self::GATE_VENUS => 'brána ♀',
+            self::GATE_MARS => 'brána ♂',
+            self::MOVEMENT_VENUS => 'pohyb ♀',
+            self::MOVEMENT_MARS => 'pohyb ♂',
+            self::TRANSPOSITION_VENUS => 'transpozice ♀',
+            self::TRANSPOSITION_MARS => 'transpozice ♂',
+            self::DISCHARGE_VENUS => 'výboj ♀',
+            self::DISCHARGE_MARS => 'výboj ♂',
+            self::WATCHER_VENUS => 'hlídač ♀',
+            self::WATCHER_MARS => 'hlídač ♂',
         ],
     ];
 
