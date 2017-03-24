@@ -32,6 +32,8 @@ class ProfileCode extends AbstractTheurgistCode
     const DISCHARGE_MARS = 'discharge_♂';
     const WATCHER_VENUS = 'watcher_♀';
     const WATCHER_MARS = 'watcher_♂';
+    const LOOK_VENUS = 'look_♀';
+    const LOOK_MARS = 'look_♂';
 
     /**
      * @return array|string[]
@@ -65,6 +67,8 @@ class ProfileCode extends AbstractTheurgistCode
             self::DISCHARGE_MARS,
             self::WATCHER_VENUS,
             self::WATCHER_MARS,
+            self::LOOK_VENUS,
+            self::LOOK_MARS,
         ];
     }
 
@@ -105,6 +109,8 @@ class ProfileCode extends AbstractTheurgistCode
             self::DISCHARGE_MARS => 'výboj ♂',
             self::WATCHER_VENUS => 'hlídač ♀',
             self::WATCHER_MARS => 'hlídač ♂',
+            self::LOOK_VENUS => 'vzhled ♀',
+            self::LOOK_MARS => 'vzhled ♂',
         ],
     ];
 
