@@ -22,7 +22,7 @@ class ModifierCode extends AbstractTheurgistCode
     const STEP_TO_FUTURE_OR_PAST = 'step_to_future_or_past';
     const TRANSPOSITION = 'transposition';
     const RELEASE = 'release';
-    const SCENT = 'scent';
+    const FRAGRANCE = 'fragrance';
 
     /**
      * @return array|\string[]
@@ -46,7 +46,7 @@ class ModifierCode extends AbstractTheurgistCode
             self::STEP_TO_FUTURE_OR_PAST,
             self::TRANSPOSITION,
             self::RELEASE,
-            self::SCENT,
+            self::FRAGRANCE,
         ];
     }
 
@@ -77,7 +77,7 @@ class ModifierCode extends AbstractTheurgistCode
             self::STEP_TO_FUTURE_OR_PAST => 'schod do budoucnosti nebo minulosti',
             self::TRANSPOSITION => 'transpozice',
             self::RELEASE => 'uvolnění',
-            self::SCENT => 'vůně',
+            self::FRAGRANCE => 'vůně',
         ],
     ];
 
