@@ -21,8 +21,17 @@ abstract class AbstractTheurgistCodeTest extends AbstractCodeTest
         foreach ($sutClass::getPossibleValues() as $value) {
             /** @var AbstractTheurgistCode $sut */
             $sut = $sutClass::getIt($value);
-            self::assertSame(str_replace('_', ' ', $value), $sut->translateTo('en'));
+            self::assertSame($this->codeToEnglish($value), $sut->translateTo('en'));
         }
+    }
+
+    /**
+     * @param string $code
+     * @return string
+     */
+    private function codeToEnglish(string $code)
+    {
+        return str_replace(['venus', 'mars', '_'], ['♀', '♂', ' '], $code);
     }
 
     /**
@@ -35,16 +44,16 @@ abstract class AbstractTheurgistCodeTest extends AbstractCodeTest
         foreach ($sutClass::getPossibleValues() as $value) {
             /** @var AbstractTheurgistCode $sut */
             $sut = $sutClass::getIt($value);
-            $inEnglish = str_replace('_', ' ', $value);
+            $inEnglish = $this->codeToEnglish($value);
             self::assertSame($inEnglish, $sut->translateTo('en'));
-            if (!in_array($value, $this->getValuesSameInCzechAndEnglish(), true)) {
+            if (in_array($value, $this->getValuesSameInCzechAndEnglish(), true)) {
+                self::assertSame($inEnglish, $sut->translateTo('cs'));
+            } else {
                 self::assertNotSame(
                     $inEnglish,
                     $sut->translateTo('cs'),
                     "Expected '{$value}' to be different in czech than in english"
                 );
-            } else {
-                self::assertSame($inEnglish, $sut->translateTo('cs'));
             }
         }
     }
@@ -64,8 +73,7 @@ abstract class AbstractTheurgistCodeTest extends AbstractCodeTest
         foreach ($sutClass::getPossibleValues() as $value) {
             /** @var AbstractTheurgistCode $sut */
             $sut = $sutClass::getIt($value);
-            $inEnglish = str_replace('_', ' ', $value);
-            self::assertSame($inEnglish, $sut->translateTo('en'));
+            self::assertSame($this->codeToEnglish($value), $sut->translateTo('en'));
         }
     }
 
@@ -79,7 +87,7 @@ abstract class AbstractTheurgistCodeTest extends AbstractCodeTest
         foreach ($sutClass::getPossibleValues() as $value) {
             /** @var AbstractTheurgistCode $sut */
             $sut = $sutClass::getIt($value);
-            $inEnglish = str_replace('_', ' ', $value);
+            $inEnglish = $this->codeToEnglish($value);
             $previousErrorReporting = error_reporting(-1 ^ E_USER_WARNING);
             error_clear_last();
             self::assertSame($inEnglish, @$sut->translateTo('demonic'));

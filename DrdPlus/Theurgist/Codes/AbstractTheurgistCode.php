@@ -12,17 +12,21 @@ abstract class AbstractTheurgistCode extends AbstractCode
     public function translateTo(string $languageCode): string
     {
         $code = $this->getValue();
-        if ($languageCode === 'en') {
-            return str_replace('_', ' ', $code); // just replacing underscores by spaces
-        }
         $translations = $this->getTranslations($languageCode);
         if (array_key_exists($code, $translations)) {
             return $translations[$code];
+        }
+        if ($languageCode === 'en') {
+            return str_replace('_', ' ', $code); // just replacing underscores by spaces
         }
         trigger_error(
             "Missing translation for value '{$code}' and language '{$languageCode}', english will be used instead",
             E_USER_WARNING
         );
+        $translations = $this->getTranslations('en');
+        if (array_key_exists($code, $translations)) {
+            return $translations[$code];
+        }
 
         return str_replace('_', ' ', $code); // just replacing underscores by spaces
     }

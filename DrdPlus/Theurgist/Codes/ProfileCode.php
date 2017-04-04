@@ -6,34 +6,34 @@ namespace DrdPlus\Theurgist\Codes;
  */
 class ProfileCode extends AbstractTheurgistCode
 {
-    const BARRIER_VENUS = 'barrier_♀';
-    const BARRIER_MARS = 'barrier_♂';
-    const SPARK_VENUS = 'spark_♀';
-    const SPARK_MARS = 'spark_♂';
-    const RELEASE_VENUS = 'release_♀';
-    const RELEASE_MARS = 'release_♂';
-    const SCENT_VENUS = 'scent_♀';
-    const SCENT_MARS = 'scent_♂';
-    const ILLUSION_VENUS = 'illusion_♀';
-    const ILLUSION_MARS = 'illusion_♂';
-    const RECEPTOR_VENUS = 'receptor_♀';
-    const RECEPTOR_MARS = 'receptor_♂';
-    const BREACH_VENUS = 'breach_♀';
-    const BREACH_MARS = 'breach_♂';
-    const FIRE_VENUS = 'fire_♀';
-    const FIRE_MARS = 'fire_♂';
-    const GATE_VENUS = 'gate_♀';
-    const GATE_MARS = 'gate_♂';
-    const MOVEMENT_VENUS = 'movement_♀';
-    const MOVEMENT_MARS = 'movement_♂';
-    const TRANSPOSITION_VENUS = 'transposition_♀';
-    const TRANSPOSITION_MARS = 'transposition_♂';
-    const DISCHARGE_VENUS = 'discharge_♀';
-    const DISCHARGE_MARS = 'discharge_♂';
-    const WATCHER_VENUS = 'watcher_♀';
-    const WATCHER_MARS = 'watcher_♂';
-    const LOOK_VENUS = 'look_♀';
-    const LOOK_MARS = 'look_♂';
+    const BARRIER_VENUS = 'barrier_venus';
+    const BARRIER_MARS = 'barrier_mars';
+    const SPARK_VENUS = 'spark_venus';
+    const SPARK_MARS = 'spark_mars';
+    const RELEASE_VENUS = 'release_venus';
+    const RELEASE_MARS = 'release_mars';
+    const SCENT_VENUS = 'scent_venus';
+    const SCENT_MARS = 'scent_mars';
+    const ILLUSION_VENUS = 'illusion_venus';
+    const ILLUSION_MARS = 'illusion_mars';
+    const RECEPTOR_VENUS = 'receptor_venus';
+    const RECEPTOR_MARS = 'receptor_mars';
+    const BREACH_VENUS = 'breach_venus';
+    const BREACH_MARS = 'breach_mars';
+    const FIRE_VENUS = 'fire_venus';
+    const FIRE_MARS = 'fire_mars';
+    const GATE_VENUS = 'gate_venus';
+    const GATE_MARS = 'gate_mars';
+    const MOVEMENT_VENUS = 'movement_venus';
+    const MOVEMENT_MARS = 'movement_mars';
+    const TRANSPOSITION_VENUS = 'transposition_venus';
+    const TRANSPOSITION_MARS = 'transposition_mars';
+    const DISCHARGE_VENUS = 'discharge_venus';
+    const DISCHARGE_MARS = 'discharge_mars';
+    const WATCHER_VENUS = 'watcher_venus';
+    const WATCHER_MARS = 'watcher_mars';
+    const LOOK_VENUS = 'look_venus';
+    const LOOK_MARS = 'look_mars';
 
     /**
      * @return array|string[]
@@ -78,6 +78,14 @@ class ProfileCode extends AbstractTheurgistCode
      */
     protected function getTranslations(string $languageCode): array
     {
+        if ($languageCode === 'en' && !array_key_exists('en', self::$translations)) {
+            self::$translations['en'] = [];
+            foreach (self::getPossibleValues() as $key) {
+                $translation = str_replace(['venus', 'mars', '_'], ['♀', '♂', ' '], $key);
+                self::$translations['en'][$key] = $translation;
+            }
+        }
+
         return self::$translations[$languageCode] ?? [];
     }
 
