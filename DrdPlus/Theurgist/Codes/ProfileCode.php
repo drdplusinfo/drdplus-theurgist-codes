@@ -34,6 +34,8 @@ class ProfileCode extends AbstractTheurgistCode
     const WATCHER_MARS = 'watcher_mars';
     const LOOK_VENUS = 'look_venus';
     const LOOK_MARS = 'look_mars';
+    const TIME_VENUS = 'time_venus';
+    const TIME_MARS = 'time_mars';
 
     /**
      * @return array|string[]
@@ -69,6 +71,8 @@ class ProfileCode extends AbstractTheurgistCode
             self::WATCHER_MARS,
             self::LOOK_VENUS,
             self::LOOK_MARS,
+            self::TIME_VENUS,
+            self::TIME_MARS,
         ];
     }
 
@@ -119,6 +123,8 @@ class ProfileCode extends AbstractTheurgistCode
             self::WATCHER_MARS => 'hlídač ♂',
             self::LOOK_VENUS => 'vzhled ♀',
             self::LOOK_MARS => 'vzhled ♂',
+            self::TIME_VENUS => 'čas ♀',
+            self::TIME_MARS => 'čas ♂',
         ],
     ];
 
