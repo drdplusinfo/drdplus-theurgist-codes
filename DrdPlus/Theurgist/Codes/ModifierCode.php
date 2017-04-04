@@ -19,7 +19,8 @@ class ModifierCode extends AbstractTheurgistCode
     const MOVEMENT = 'movement';
     const BREACH = 'breach';
     const RECEPTOR = 'receptor';
-    const STEP_TO_FUTURE_OR_PAST = 'step_to_future_or_past';
+    const STEP_TO_FUTURE = 'step_to_future';
+    const STEP_TO_PAST = 'step_to_past';
     const TRANSPOSITION = 'transposition';
     const RELEASE = 'release';
     const FRAGRANCE = 'fragrance';
@@ -43,7 +44,8 @@ class ModifierCode extends AbstractTheurgistCode
             self::MOVEMENT,
             self::BREACH,
             self::RECEPTOR,
-            self::STEP_TO_FUTURE_OR_PAST,
+            self::STEP_TO_FUTURE,
+            self::STEP_TO_PAST,
             self::TRANSPOSITION,
             self::RELEASE,
             self::FRAGRANCE,
@@ -74,7 +76,8 @@ class ModifierCode extends AbstractTheurgistCode
             self::MOVEMENT => 'pohyb',
             self::BREACH => 'průraz',
             self::RECEPTOR => 'receptor',
-            self::STEP_TO_FUTURE_OR_PAST => 'schod do budoucnosti nebo minulosti',
+            self::STEP_TO_FUTURE => 'schod do budoucnosti',
+            self::STEP_TO_PAST => 'schod do minulosti',
             self::TRANSPOSITION => 'transpozice',
             self::RELEASE => 'uvolnění',
             self::FRAGRANCE => 'vůně',
