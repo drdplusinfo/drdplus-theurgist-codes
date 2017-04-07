@@ -15,6 +15,7 @@ class FormCode extends AbstractTheurgistCode
     const INTANGIBLE = 'intangible';
     const VISIBLE = 'visible';
     const INVISIBLE = 'invisible';
+    const BY_FORMULA = 'by_formula';
 
     /**
      * @return array
@@ -31,6 +32,7 @@ class FormCode extends AbstractTheurgistCode
             self::INTANGIBLE,
             self::VISIBLE,
             self::INVISIBLE,
+            self::BY_FORMULA,
         ];
     }
 
@@ -45,6 +47,7 @@ class FormCode extends AbstractTheurgistCode
             self::INTANGIBLE => 'nehmotná',
             self::VISIBLE => 'viditelná',
             self::INVISIBLE => 'neviditelná',
+            self::BY_FORMULA => 'podle formule',
         ],
     ];
 
