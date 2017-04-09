@@ -57,11 +57,7 @@ class FormCode extends AbstractTheurgistCode
      */
     protected function getTranslations(string $languageCode): array
     {
-        if ($languageCode === 'cs') {
-            return self::$translations['cs'];
-        }
-
-        return [];
+        return self::$translations[$languageCode] ?? [];
     }
 
 }
