@@ -2,9 +2,9 @@
 namespace DrdPlus\Theurgist\Codes;
 
 /**
- * @method static AffectionTypeCode getIt($codeValue)
+ * @method static AffectionPeriodCode getIt($codeValue)
  */
-class AffectionTypeCode extends AbstractTheurgistCode
+class AffectionPeriodCode extends AbstractTheurgistCode
 {
     const DAILY = 'daily';
     const MONTHLY = 'monthly';

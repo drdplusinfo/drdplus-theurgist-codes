@@ -1,7 +1,7 @@
 <?php
 namespace DrdPlus\Tests\Theurgist\Codes;
 
-class AffectionTypeCodeTest extends AbstractTheurgistCodeTest
+class AffectionPeriodCodeTest extends AbstractTheurgistCodeTest
 {
     protected function getValuesSameInCzechAndEnglish(): array
     {
