@@ -2,9 +2,9 @@
 namespace DrdPlus\Theurgist\Codes;
 
 /**
- * @method static TraitCode getIt($codeValue)
+ * @method static SpellTraitCode getIt($codeValue)
  */
-class TraitCode extends AbstractTheurgistCode
+class SpellTraitCode extends AbstractTheurgistCode
 {
     const AFFECTING = 'affecting';
     const INVISIBLE = 'invisible';

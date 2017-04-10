@@ -1,7 +1,7 @@
 <?php
 namespace DrdPlus\Tests\Theurgist\Codes;
 
-class TraitCodeTest extends AbstractTheurgistCodeTest
+class SpellTraitCodeTest extends AbstractTheurgistCodeTest
 {
     protected function getValuesSameInCzechAndEnglish(): array
     {
