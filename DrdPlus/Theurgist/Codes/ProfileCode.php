@@ -77,6 +77,34 @@ class ProfileCode extends AbstractTheurgistCode
     }
 
     /**
+     * @return bool
+     */
+    public function isMars(): bool
+    {
+        return strpos($this->getValue(), 'mars') !== false;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isVenus(): bool
+    {
+        return strpos($this->getValue(), 'venus') !== false;
+    }
+
+    /**
+     * @return ProfileCode
+     */
+    public function getWithOppositeGender(): ProfileCode
+    {
+        if (strpos($this->getValue(), 'mars') !== false) {
+            return static::getIt(str_replace('mars', 'venus', $this->getValue()));
+        }
+
+        return static::getIt(str_replace('venus', 'mars', $this->getValue()));
+    }
+
+    /**
      * @param string $languageCode
      * @return array|string[]
      */

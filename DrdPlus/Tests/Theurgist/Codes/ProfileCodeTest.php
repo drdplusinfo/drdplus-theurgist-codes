@@ -33,6 +33,23 @@ class ProfileCodeTest extends AbstractTheurgistCodeTest
         }
     }
 
+    /**
+     * @test
+     */
+    public function I_can_ask_it_for_gender_and_get_opposite()
+    {
+        $lookMars = ProfileCode::getIt(ProfileCode::LOOK_MARS);
+        self::assertTrue($lookMars->isMars());
+        self::assertFalse($lookMars->isVenus());
+
+        $lookVenus = $lookMars->getWithOppositeGender();
+        self::assertSame(ProfileCode::getIt(ProfileCode::LOOK_VENUS), $lookVenus);
+        self::assertFalse($lookVenus->isMars());
+        self::assertTrue($lookVenus->isVenus());
+
+        self::assertSame($lookMars, $lookVenus->getWithOppositeGender());
+    }
+
     protected function getValuesSameInCzechAndEnglish(): array
     {
         return [ProfileCode::RECEPTOR_MARS, ProfileCode::RECEPTOR_VENUS];
