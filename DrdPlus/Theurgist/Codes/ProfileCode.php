@@ -40,7 +40,7 @@ class ProfileCode extends AbstractTheurgistCode
     /**
      * @return array|string[]
      */
-    public static function getPossibleValues()
+    public static function getPossibleValues(): array
     {
         return [
             self::BARRIER_VENUS,

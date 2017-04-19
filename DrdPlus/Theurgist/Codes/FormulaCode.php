@@ -20,7 +20,7 @@ class FormulaCode extends AbstractTheurgistCode
     const DISCHARGE = 'discharge';
     const LOCK = 'lock';
 
-    public static function getPossibleValues()
+    public static function getPossibleValues(): array
     {
         return [
             self::BARRIER,
