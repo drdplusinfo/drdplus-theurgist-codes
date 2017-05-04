@@ -2,9 +2,9 @@
 namespace DrdPlus\Theurgist\Codes;
 
 /**
- * @method static MutableCastingParameterCode getIt($codeValue)
+ * @method static ModifierMutableCastingParameterCode getIt($codeValue)
  */
-class MutableCastingParameterCode extends AbstractTheurgistCode
+class ModifierMutableCastingParameterCode extends AbstractTheurgistCode
 {
     const RADIUS = 'radius';
     const EPICENTER_SHIFT = 'epicenter_shift';
