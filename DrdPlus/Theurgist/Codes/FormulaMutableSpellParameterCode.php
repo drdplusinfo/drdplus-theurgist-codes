@@ -2,9 +2,9 @@
 namespace DrdPlus\Theurgist\Codes;
 
 /**
- * @method static FormulaMutableCastingParameterCode getIt($codeValue)
+ * @method static FormulaMutableSpellParameterCode getIt($codeValue)
  */
-class FormulaMutableCastingParameterCode extends AbstractTheurgistCode
+class FormulaMutableSpellParameterCode extends AbstractTheurgistCode
 {
     const RADIUS = 'radius';
     const DURATION = 'duration';

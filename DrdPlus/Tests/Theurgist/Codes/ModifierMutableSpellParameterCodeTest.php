@@ -1,7 +1,7 @@
 <?php
 namespace DrdPlus\Tests\Theurgist\Codes;
 
-class ModifierMutableCastingParameterCodeTest extends AbstractTheurgistCodeTest
+class ModifierMutableSpellParameterCodeTest extends AbstractTheurgistCodeTest
 {
     protected function getValuesSameInCzechAndEnglish(): array
     {
