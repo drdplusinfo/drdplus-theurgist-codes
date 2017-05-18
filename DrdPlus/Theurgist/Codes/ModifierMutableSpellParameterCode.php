@@ -15,7 +15,7 @@ class ModifierMutableSpellParameterCode extends AbstractTheurgistCode
     const POINTS = 'points';
     const INVISIBILITY = 'invisibility';
     const QUALITY = 'quality';
-    const CONDITIONS = 'conditions';
+    const NUMBER_OF_CONDITIONS = 'number_of_conditions';
     const RESISTANCE = 'resistance';
     const NUMBER_OF_SITUATIONS = 'number_of_situations';
     const THRESHOLD = 'threshold';
@@ -26,19 +26,19 @@ class ModifierMutableSpellParameterCode extends AbstractTheurgistCode
     public static function getPossibleValues(): array
     {
         return [
-            'radius',
-            'epicenter_shift',
-            'power',
-            'attack',
-            'grafts',
-            'spell_speed',
-            'points',
-            'invisibility',
-            'quality',
-            'conditions',
-            'resistance',
-            'number_of_situations',
-            'threshold',
+            self::RADIUS,
+            self::EPICENTER_SHIFT,
+            self::POWER,
+            self::ATTACK,
+            self::GRAFTS,
+            self::SPELL_SPEED,
+            self::POINTS,
+            self::INVISIBILITY,
+            self::QUALITY,
+            self::NUMBER_OF_CONDITIONS,
+            self::RESISTANCE,
+            self::NUMBER_OF_SITUATIONS,
+            self::THRESHOLD,
         ];
     }
 
@@ -53,7 +53,7 @@ class ModifierMutableSpellParameterCode extends AbstractTheurgistCode
             self::POINTS => 'body',
             self::INVISIBILITY => 'neviditelnost',
             self::QUALITY => 'kvalita',
-            self::CONDITIONS => 'kondice',
+            self::NUMBER_OF_CONDITIONS => 'počet podmínek',
             self::RESISTANCE => 'odolnost',
             self::NUMBER_OF_SITUATIONS => 'počet situací',
             self::THRESHOLD => 'práh citlivosti',
