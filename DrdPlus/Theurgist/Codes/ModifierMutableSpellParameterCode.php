@@ -12,7 +12,7 @@ class ModifierMutableSpellParameterCode extends AbstractTheurgistCode
     const ATTACK = 'attack';
     const GRAFTS = 'grafts';
     const SPELL_SPEED = 'spell_speed';
-    const POINTS = 'points';
+    const NUMBER_OF_WAYPOINTS = 'number_of_waypoints';
     const INVISIBILITY = 'invisibility';
     const QUALITY = 'quality';
     const NUMBER_OF_CONDITIONS = 'number_of_conditions';
@@ -32,7 +32,7 @@ class ModifierMutableSpellParameterCode extends AbstractTheurgistCode
             self::ATTACK,
             self::GRAFTS,
             self::SPELL_SPEED,
-            self::POINTS,
+            self::NUMBER_OF_WAYPOINTS,
             self::INVISIBILITY,
             self::QUALITY,
             self::NUMBER_OF_CONDITIONS,
@@ -50,7 +50,7 @@ class ModifierMutableSpellParameterCode extends AbstractTheurgistCode
             self::ATTACK => 'útočnost',
             self::GRAFTS => 'štěpy',
             self::SPELL_SPEED => 'rychlost',
-            self::POINTS => 'body',
+            self::NUMBER_OF_WAYPOINTS => 'počet průchodů',
             self::INVISIBILITY => 'neviditelnost',
             self::QUALITY => 'kvalita',
             self::NUMBER_OF_CONDITIONS => 'počet podmínek',
