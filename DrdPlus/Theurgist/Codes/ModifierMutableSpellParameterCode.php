@@ -9,6 +9,7 @@ class ModifierMutableSpellParameterCode extends AbstractTheurgistCode
     const RADIUS = 'radius';
     const EPICENTER_SHIFT = 'epicenter_shift';
     const POWER = 'power';
+    const NOISE = 'noise';
     const ATTACK = 'attack';
     const GRAFTS = 'grafts';
     const SPELL_SPEED = 'spell_speed';
@@ -29,6 +30,7 @@ class ModifierMutableSpellParameterCode extends AbstractTheurgistCode
             self::RADIUS,
             self::EPICENTER_SHIFT,
             self::POWER,
+            self::NOISE,
             self::ATTACK,
             self::GRAFTS,
             self::SPELL_SPEED,
@@ -47,6 +49,7 @@ class ModifierMutableSpellParameterCode extends AbstractTheurgistCode
             self::RADIUS => 'poloměr',
             self::EPICENTER_SHIFT => 'posun',
             self::POWER => 'síla',
+            self::NOISE => 'síla zvuku',
             self::ATTACK => 'útočnost',
             self::GRAFTS => 'štěpy',
             self::SPELL_SPEED => 'rychlost',
