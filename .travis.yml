@@ -16,4 +16,4 @@ script:
   - ./vendor/phpunit/phpunit/phpunit -v --coverage-clover build/logs/clover.xml
 
 after_script:
-  - CODECLIMATE_REPO_TOKEN= ./vendor/bin/test-reporter
+  - CODECLIMATE_REPO_TOKEN=115b945b9a8decdaffb83fb4125b41e875b483660a8d1851606a8e541df2768e ./vendor/bin/test-reporter
