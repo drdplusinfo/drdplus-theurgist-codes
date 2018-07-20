@@ -1,4 +1,6 @@
 <?php
+declare(strict_types = 1);
+
 namespace DrdPlus\Theurgist\Codes;
 
 /**
@@ -6,20 +8,20 @@ namespace DrdPlus\Theurgist\Codes;
  */
 class ModifierMutableSpellParameterCode extends AbstractTheurgistCode
 {
-    const RADIUS = 'radius';
-    const EPICENTER_SHIFT = 'epicenter_shift';
-    const POWER = 'power';
-    const NOISE = 'noise';
-    const ATTACK = 'attack';
-    const GRAFTS = 'grafts';
-    const SPELL_SPEED = 'spell_speed';
-    const NUMBER_OF_WAYPOINTS = 'number_of_waypoints';
-    const INVISIBILITY = 'invisibility';
-    const QUALITY = 'quality';
-    const NUMBER_OF_CONDITIONS = 'number_of_conditions';
-    const RESISTANCE = 'resistance';
-    const NUMBER_OF_SITUATIONS = 'number_of_situations';
-    const THRESHOLD = 'threshold';
+    public const RADIUS = 'radius';
+    public const EPICENTER_SHIFT = 'epicenter_shift';
+    public const POWER = 'power';
+    public const NOISE = 'noise';
+    public const ATTACK = 'attack';
+    public const GRAFTS = 'grafts';
+    public const SPELL_SPEED = 'spell_speed';
+    public const NUMBER_OF_WAYPOINTS = 'number_of_waypoints';
+    public const INVISIBILITY = 'invisibility';
+    public const QUALITY = 'quality';
+    public const NUMBER_OF_CONDITIONS = 'number_of_conditions';
+    public const RESISTANCE = 'resistance';
+    public const NUMBER_OF_SITUATIONS = 'number_of_situations';
+    public const THRESHOLD = 'threshold';
 
     /**
      * @return array|string[]

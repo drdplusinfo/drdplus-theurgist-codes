@@ -1,4 +1,6 @@
 <?php
+declare(strict_types = 1);
+
 namespace DrdPlus\Theurgist\Codes;
 
 /**
@@ -6,36 +8,36 @@ namespace DrdPlus\Theurgist\Codes;
  */
 class ProfileCode extends AbstractTheurgistCode
 {
-    const BARRIER_VENUS = 'barrier_venus';
-    const BARRIER_MARS = 'barrier_mars';
-    const SPARK_VENUS = 'spark_venus';
-    const SPARK_MARS = 'spark_mars';
-    const RELEASE_VENUS = 'release_venus';
-    const RELEASE_MARS = 'release_mars';
-    const SCENT_VENUS = 'scent_venus';
-    const SCENT_MARS = 'scent_mars';
-    const ILLUSION_VENUS = 'illusion_venus';
-    const ILLUSION_MARS = 'illusion_mars';
-    const RECEPTOR_VENUS = 'receptor_venus';
-    const RECEPTOR_MARS = 'receptor_mars';
-    const BREACH_VENUS = 'breach_venus';
-    const BREACH_MARS = 'breach_mars';
-    const FIRE_VENUS = 'fire_venus';
-    const FIRE_MARS = 'fire_mars';
-    const GATE_VENUS = 'gate_venus';
-    const GATE_MARS = 'gate_mars';
-    const MOVEMENT_VENUS = 'movement_venus';
-    const MOVEMENT_MARS = 'movement_mars';
-    const TRANSPOSITION_VENUS = 'transposition_venus';
-    const TRANSPOSITION_MARS = 'transposition_mars';
-    const DISCHARGE_VENUS = 'discharge_venus';
-    const DISCHARGE_MARS = 'discharge_mars';
-    const WATCHER_VENUS = 'watcher_venus';
-    const WATCHER_MARS = 'watcher_mars';
-    const LOOK_VENUS = 'look_venus';
-    const LOOK_MARS = 'look_mars';
-    const TIME_VENUS = 'time_venus';
-    const TIME_MARS = 'time_mars';
+    public const BARRIER_VENUS = 'barrier_venus';
+    public const BARRIER_MARS = 'barrier_mars';
+    public const SPARK_VENUS = 'spark_venus';
+    public const SPARK_MARS = 'spark_mars';
+    public const RELEASE_VENUS = 'release_venus';
+    public const RELEASE_MARS = 'release_mars';
+    public const SCENT_VENUS = 'scent_venus';
+    public const SCENT_MARS = 'scent_mars';
+    public const ILLUSION_VENUS = 'illusion_venus';
+    public const ILLUSION_MARS = 'illusion_mars';
+    public const RECEPTOR_VENUS = 'receptor_venus';
+    public const RECEPTOR_MARS = 'receptor_mars';
+    public const BREACH_VENUS = 'breach_venus';
+    public const BREACH_MARS = 'breach_mars';
+    public const FIRE_VENUS = 'fire_venus';
+    public const FIRE_MARS = 'fire_mars';
+    public const GATE_VENUS = 'gate_venus';
+    public const GATE_MARS = 'gate_mars';
+    public const MOVEMENT_VENUS = 'movement_venus';
+    public const MOVEMENT_MARS = 'movement_mars';
+    public const TRANSPOSITION_VENUS = 'transposition_venus';
+    public const TRANSPOSITION_MARS = 'transposition_mars';
+    public const DISCHARGE_VENUS = 'discharge_venus';
+    public const DISCHARGE_MARS = 'discharge_mars';
+    public const WATCHER_VENUS = 'watcher_venus';
+    public const WATCHER_MARS = 'watcher_mars';
+    public const LOOK_VENUS = 'look_venus';
+    public const LOOK_MARS = 'look_mars';
+    public const TIME_VENUS = 'time_venus';
+    public const TIME_MARS = 'time_mars';
 
     /**
      * @return array|string[]

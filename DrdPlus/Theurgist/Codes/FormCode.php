@@ -1,4 +1,6 @@
 <?php
+declare(strict_types = 1);
+
 namespace DrdPlus\Theurgist\Codes;
 
 /**
@@ -6,16 +8,16 @@ namespace DrdPlus\Theurgist\Codes;
  */
 class FormCode extends AbstractTheurgistCode
 {
-    const DIRECT = 'direct';
-    const INDIRECT = 'indirect';
-    const VOLUME = 'volume';
-    const PLANAR = 'planar';
-    const BEAM = 'beam';
-    const TANGIBLE = 'tangible';
-    const INTANGIBLE = 'intangible';
-    const VISIBLE = 'visible';
-    const INVISIBLE = 'invisible';
-    const BY_FORMULA = 'by_formula';
+    public const DIRECT = 'direct';
+    public const INDIRECT = 'indirect';
+    public const VOLUME = 'volume';
+    public const PLANAR = 'planar';
+    public const BEAM = 'beam';
+    public const TANGIBLE = 'tangible';
+    public const INTANGIBLE = 'intangible';
+    public const VISIBLE = 'visible';
+    public const INVISIBLE = 'invisible';
+    public const BY_FORMULA = 'by_formula';
 
     /**
      * @return array

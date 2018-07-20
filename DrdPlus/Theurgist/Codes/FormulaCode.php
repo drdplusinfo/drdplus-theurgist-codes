@@ -1,4 +1,6 @@
 <?php
+declare(strict_types = 1);
+
 namespace DrdPlus\Theurgist\Codes;
 
 /**
@@ -6,19 +8,19 @@ namespace DrdPlus\Theurgist\Codes;
  */
 class FormulaCode extends AbstractTheurgistCode
 {
-    const BARRIER = 'barrier';
-    const SMOKE = 'smoke';
-    const ILLUSION = 'illusion';
-    const METAMORPHOSIS = 'metamorphosis';
-    const FIRE = 'fire';
-    const PORTAL = 'portal';
-    const LIGHT = 'light';
-    const FLOW_OF_TIME = 'flow_of_time';
-    CONST TSUNAMI_FROM_CLAY_AND_STONES = 'tsunami_from_clay_and_stones';
-    const HIT = 'hit';
-    const GREAT_MASSACRE = 'great_massacre';
-    const DISCHARGE = 'discharge';
-    const LOCK = 'lock';
+    public const BARRIER = 'barrier';
+    public const SMOKE = 'smoke';
+    public const ILLUSION = 'illusion';
+    public const METAMORPHOSIS = 'metamorphosis';
+    public const FIRE = 'fire';
+    public const PORTAL = 'portal';
+    public const LIGHT = 'light';
+    public const FLOW_OF_TIME = 'flow_of_time';
+    public CONST TSUNAMI_FROM_CLAY_AND_STONES = 'tsunami_from_clay_and_stones';
+    public const HIT = 'hit';
+    public const GREAT_MASSACRE = 'great_massacre';
+    public const DISCHARGE = 'discharge';
+    public const LOCK = 'lock';
 
     public static function getPossibleValues(): array
     {

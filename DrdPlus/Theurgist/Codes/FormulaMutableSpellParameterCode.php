@@ -1,4 +1,6 @@
 <?php
+declare(strict_types = 1);
+
 namespace DrdPlus\Theurgist\Codes;
 
 /**
@@ -6,15 +8,15 @@ namespace DrdPlus\Theurgist\Codes;
  */
 class FormulaMutableSpellParameterCode extends AbstractTheurgistCode
 {
-    const RADIUS = 'radius';
-    const DURATION = 'duration';
-    const POWER = 'power';
-    const ATTACK = 'attack';
-    const SIZE_CHANGE = 'size_change';
-    const DETAIL_LEVEL = 'detail_level';
-    const BRIGHTNESS = 'brightness';
-    const SPELL_SPEED = 'spell_speed';
-    const EPICENTER_SHIFT = 'epicenter_shift';
+    public const RADIUS = 'radius';
+    public const DURATION = 'duration';
+    public const POWER = 'power';
+    public const ATTACK = 'attack';
+    public const SIZE_CHANGE = 'size_change';
+    public const DETAIL_LEVEL = 'detail_level';
+    public const BRIGHTNESS = 'brightness';
+    public const SPELL_SPEED = 'spell_speed';
+    public const EPICENTER_SHIFT = 'epicenter_shift';
 
     /**
      * @return array|string[]

@@ -1,4 +1,6 @@
 <?php
+declare(strict_types = 1);
+
 namespace DrdPlus\Theurgist\Codes;
 
 /**
@@ -6,10 +8,10 @@ namespace DrdPlus\Theurgist\Codes;
  */
 class AffectionPeriodCode extends AbstractTheurgistCode
 {
-    const DAILY = 'daily';
-    const MONTHLY = 'monthly';
-    const YEARLY = 'yearly';
-    const LIFE = 'life';
+    public const DAILY = 'daily';
+    public const MONTHLY = 'monthly';
+    public const YEARLY = 'yearly';
+    public const LIFE = 'life';
 
     /**
      * @return array|string[]

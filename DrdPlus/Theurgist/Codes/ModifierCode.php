@@ -1,4 +1,6 @@
 <?php
+declare(strict_types = 1);
+
 namespace DrdPlus\Theurgist\Codes;
 
 /**
@@ -6,24 +8,24 @@ namespace DrdPlus\Theurgist\Codes;
  */
 class ModifierCode extends AbstractTheurgistCode
 {
-    const COLOR = 'color';
-    const GATE = 'gate';
-    const EXPLOSION = 'explosion';
-    const FILTER = 'filter';
-    const WATCHER = 'watcher';
-    const THUNDER = 'thunder';
-    const INTERACTIVE_ILLUSION = 'interactive_illusion';
-    const HAMMER = 'hammer';
-    const CAMOUFLAGE = 'camouflage';
-    const INVISIBILITY = 'invisibility';
-    const MOVEMENT = 'movement';
-    const BREACH = 'breach';
-    const RECEPTOR = 'receptor';
-    const STEP_TO_FUTURE = 'step_to_future';
-    const STEP_TO_PAST = 'step_to_past';
-    const TRANSPOSITION = 'transposition';
-    const RELEASE = 'release';
-    const FRAGRANCE = 'fragrance';
+    public const COLOR = 'color';
+    public const GATE = 'gate';
+    public const EXPLOSION = 'explosion';
+    public const FILTER = 'filter';
+    public const WATCHER = 'watcher';
+    public const THUNDER = 'thunder';
+    public const INTERACTIVE_ILLUSION = 'interactive_illusion';
+    public const HAMMER = 'hammer';
+    public const CAMOUFLAGE = 'camouflage';
+    public const INVISIBILITY = 'invisibility';
+    public const MOVEMENT = 'movement';
+    public const BREACH = 'breach';
+    public const RECEPTOR = 'receptor';
+    public const STEP_TO_FUTURE = 'step_to_future';
+    public const STEP_TO_PAST = 'step_to_past';
+    public const TRANSPOSITION = 'transposition';
+    public const RELEASE = 'release';
+    public const FRAGRANCE = 'fragrance';
 
     /**
      * @return array|\string[]

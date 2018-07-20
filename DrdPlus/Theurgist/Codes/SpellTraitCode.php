@@ -1,4 +1,6 @@
 <?php
+declare(strict_types = 1);
+
 namespace DrdPlus\Theurgist\Codes;
 
 /**
@@ -6,26 +8,26 @@ namespace DrdPlus\Theurgist\Codes;
  */
 class SpellTraitCode extends AbstractTheurgistCode
 {
-    const AFFECTING = 'affecting';
-    const INVISIBLE = 'invisible';
-    const SILENT = 'silent';
-    const ODORLESS = 'odorless';
-    const CYCLIC = 'cyclic';
-    const MEMORY = 'memory';
-    const DEFORMATION = 'deformation';
-    const UNIDIRECTIONAL = 'unidirectional';
-    const BIDIRECTIONAL = 'bidirectional';
-    const INACRID = 'inacrid';
-    const EVERY_SENSE = 'every_sense';
-    const SITUATIONAL = 'situational';
-    const SHAPESHIFT = 'shapeshift';
-    const STATE_CHANGE = 'state_change';
-    const NATURE_CHANGE = 'nature_change';
-    const NO_SMOKE = 'no_smoke';
-    const TRANSPARENCY = 'transparency';
-    const MULTIPLE_ENTRY = 'multiple_entry';
-    const OMNIPRESENT = 'omnipresent';
-    const ACTIVE = 'active';
+    public const AFFECTING = 'affecting';
+    public const INVISIBLE = 'invisible';
+    public const SILENT = 'silent';
+    public const ODORLESS = 'odorless';
+    public const CYCLIC = 'cyclic';
+    public const MEMORY = 'memory';
+    public const DEFORMATION = 'deformation';
+    public const UNIDIRECTIONAL = 'unidirectional';
+    public const BIDIRECTIONAL = 'bidirectional';
+    public const INACRID = 'inacrid';
+    public const EVERY_SENSE = 'every_sense';
+    public const SITUATIONAL = 'situational';
+    public const SHAPESHIFT = 'shapeshift';
+    public const STATE_CHANGE = 'state_change';
+    public const NATURE_CHANGE = 'nature_change';
+    public const NO_SMOKE = 'no_smoke';
+    public const TRANSPARENCY = 'transparency';
+    public const MULTIPLE_ENTRY = 'multiple_entry';
+    public const OMNIPRESENT = 'omnipresent';
+    public const ACTIVE = 'active';
 
     /**
      * @return array|string[]

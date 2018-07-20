@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 namespace DrdPlus\Tests\Theurgist\Codes;
 
 use DrdPlus\Tests\Codes\AbstractCodeTest;
@@ -6,7 +8,7 @@ use DrdPlus\Theurgist\Codes\AbstractTheurgistCode;
 
 abstract class AbstractTheurgistCodeTest extends AbstractCodeTest
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         self::assertContains(__NAMESPACE__, static::class, 'Code test has to be in "Tests" namespace');
     }
@@ -14,7 +16,7 @@ abstract class AbstractTheurgistCodeTest extends AbstractCodeTest
     /**
      * @test
      */
-    public function I_can_get_its_english_translation()
+    public function I_can_get_its_english_translation(): void
     {
         /** @var AbstractTheurgistCode $sutClass */
         $sutClass = self::getSutClass();
@@ -29,15 +31,15 @@ abstract class AbstractTheurgistCodeTest extends AbstractCodeTest
      * @param string $code
      * @return string
      */
-    private function codeToEnglish(string $code)
+    private function codeToEnglish(string $code): string
     {
-        return str_replace(['venus', 'mars', '_'], ['♀', '♂', ' '], $code);
+        return \str_replace(['venus', 'mars', '_'], ['♀', '♂', ' '], $code);
     }
 
     /**
      * @test
      */
-    public function I_can_get_its_czech_translation()
+    public function I_can_get_its_czech_translation(): void
     {
         /** @var AbstractTheurgistCode $sutClass */
         $sutClass = self::getSutClass();
@@ -46,7 +48,7 @@ abstract class AbstractTheurgistCodeTest extends AbstractCodeTest
             $sut = $sutClass::getIt($value);
             $inEnglish = $this->codeToEnglish($value);
             self::assertSame($inEnglish, $sut->translateTo('en'));
-            if (in_array($value, $this->getValuesSameInCzechAndEnglish(), true)) {
+            if (\in_array($value, $this->getValuesSameInCzechAndEnglish(), true)) {
                 self::assertSame($inEnglish, $sut->translateTo('cs'));
             } else {
                 self::assertNotSame(
@@ -66,7 +68,7 @@ abstract class AbstractTheurgistCodeTest extends AbstractCodeTest
     /**
      * @test
      */
-    public function I_can_get_original_value()
+    public function I_can_get_original_value(): void
     {
         /** @var AbstractTheurgistCode $sutClass */
         $sutClass = self::getSutClass();
@@ -80,7 +82,7 @@ abstract class AbstractTheurgistCodeTest extends AbstractCodeTest
     /**
      * @test
      */
-    public function I_get_warning_for_unknown_locale()
+    public function I_get_warning_for_unknown_locale(): void
     {
         /** @var AbstractTheurgistCode $sutClass */
         $sutClass = self::getSutClass();
@@ -88,12 +90,12 @@ abstract class AbstractTheurgistCodeTest extends AbstractCodeTest
             /** @var AbstractTheurgistCode $sut */
             $sut = $sutClass::getIt($value);
             $inEnglish = $this->codeToEnglish($value);
-            $previousErrorReporting = error_reporting(-1 ^ E_USER_WARNING);
-            error_clear_last();
+            $previousErrorReporting = \error_reporting(-1 ^ E_USER_WARNING);
+            \error_clear_last();
             self::assertSame($inEnglish, @$sut->translateTo('demonic'));
-            $lastError = error_get_last();
-            error_reporting($previousErrorReporting);
-            error_clear_last();
+            $lastError = \error_get_last();
+            \error_reporting($previousErrorReporting);
+            \error_clear_last();
             self::assertNotEmpty($lastError);
             self::assertSame(E_USER_WARNING, $lastError['type']);
             self::assertContains($value, $lastError['message']);
